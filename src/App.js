@@ -14,7 +14,7 @@ export default class App extends Component {
     var str = 'aaaa';
 
     while (str !== 'zzzz') {
-      str = ((parseInt(str, 36) + 1).toString(36)).replace(/0/g, '0'); // 0 yerine a yazılırsa alfabetik oluşur 
+      str = ((parseInt(str, 36) + 1).toString(36)).replace(/0/g, 'a'); // 0 yerine a yazılırsa alfabetik oluşur 
       this.state.domain.push(str);
     };
 
